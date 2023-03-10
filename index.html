@@ -9,23 +9,27 @@
     <script src="./js/app.js" defer></script>
 </head>
 <body>
-    <form action="" method="get" name="myForm">
+    <form action="/" method="get" class="form" name="myForm" id="myForm" autocomplete="off">
         <h3>Registration Form</h3>
         <!-- Name -->
         <label for="name">Full Name</label>
-        <input type="text" class="fName" placeholder="John Calvin">
+        <input type="text" name="fname" class="fname" placeholder="John Calvin">
+        <small class="msg" id="errName"></small>
 
         <!-- email -->
         <label for="mail">Email</label>
-        <input type="email" name="mail" id="mail" placeholder="example@mail.com">
+        <input type="email" name="mail" class="input-control" id="mail" placeholder="example@mail.com">
+        <small class="msg" id="eeMail"></small>
     
         <!-- Password -->
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" class="input-control" name="password" id="password">
+        <small class="msg" id="eePass"></small>
 
         <!-- Phone -->
         <label for="phone">Phone No</label>
-        <input type="tel" name="phone" id="phone">
+        <input type="tel" class="input-control" name="phone" id="phone">
+        <small class="msg" id="errP"></small>
 
         <!-- Gender -->
         <div>
@@ -36,7 +40,8 @@
         </div>
 
         <!-- Submit Button -->
-        <input type="button" value="Submit" id="btn">
+        <button type="submit" name="submit" id="btn">Submit</button>
+        <!-- <input type="button" value="Submit" name="submit" id="btn"> -->
 
     </form>
 </body>
