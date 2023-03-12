@@ -12,9 +12,11 @@ form.addEventListener('submit', e => {
     e.preventDefault()
 
     checkInputs();
+    // alert("Success!!!")
 })
 
 const checkInputs = () => {
+
     const nameInput = fname.value.trim()
     const mailInput = mail.value.trim()
     const passInput = password.value.trim()
